@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game - Level Progression System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">
+                <img src="placeholder.svg?height=40&width=40" alt="Quiz Game Logo">
+                <span>Quiz Galaxy</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="game.html">Play</a>
+                <a href="profile.html">Profile</a>
+                <a href="#" class="login-btn">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="stars-container" id="stars-animation"></div>
+            <div class="hero-content">
+                <h1>Explore the Universe of Knowledge</h1>
+                <p>Challenge yourself, earn rewards, and level up your brain power!</p>
+                <a href="game.html" class="cta-button">Play Now</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Game Features</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Level Progression</h3>
+                    <p>Earn XP with every correct answer and watch your level grow</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>Unlock Rewards</h3>
+                    <p>Earn special badges, themes, and power-ups as you level up</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Compete Globally</h3>
+                    <p>Challenge players worldwide and climb the leaderboards</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="level-system-preview">
+            <h2>Level Progression System</h2>
+            <div class="level-preview-container">
+                <div class="level-progress-demo">
+                    <h3>Your Progress</h3>
+                    <div class="level-indicator">
+                        <span class="level-number">5</span>
+                        <div class="level-title">Space Explorer</div>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar" style="width: 65%"></div>
+                        <div class="progress-text">650 / 1000 XP</div>
+                    </div>
+                    <div class="next-level">
+                        <span>Next Level: </span>
+                        <span class="next-level-name">Cosmic Voyager</span>
+                    </div>
+                </div>
+
+                <div class="rewards-showcase">
+                    <h3>Available Rewards</h3>
+                    <div class="rewards-grid">
+                        <div class="reward-item unlocked">
+                            <div class="reward-icon">🌟</div>
+                            <div class="reward-name">Stardust Badge</div>
+                            <div class="reward-level">Level 2</div>
+                        </div>
+                        <div class="reward-item unlocked">
+                            <div class="reward-icon">🌙</div>
+                            <div class="reward-name">Lunar Theme</div>
+                            <div class="reward-level">Level 3</div>
+                        </div>
+                        <div class="reward-item unlocked">
+                            <div class="reward-icon">⏱️</div>
+                            <div class="reward-name">Time Booster</div>
+                            <div class="reward-level">Level 4</div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-icon">🔮</div>
+                            <div class="reward-name">Mystery Box</div>
+                            <div class="reward-level">Level 6</div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-icon">🛸</div>
+                            <div class="reward-name">UFO Theme</div>
+                            <div class="reward-level">Level 8</div>
+                        </div>
+                        <div class="reward-item">
+                            <div class="reward-icon">🌌</div>
+                            <div class="reward-name">Galaxy Badge</div>
+                            <div class="reward-level">Level 10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Answer Questions</h3>
+                    <p>Test your knowledge across various categories</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Earn XP Points</h3>
+                    <p>Get XP for correct answers and completing challenges</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Level Up</h3>
+                    <p>Reach new levels and unlock exclusive rewards</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Collect Rewards</h3>
+                    <p>Use your rewards to customize your experience</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="game-preview">
+            <h2>Ready to Play?</h2>
+            <div class="game-preview-container">
+                <div class="game-screenshot">
+                    <img src="placeholder.svg?height=300&width=500" alt="Game Screenshot">
+                </div>
+                <div class="game-cta">
+                    <h3>Start Your Journey Now</h3>
+                    <p>Join thousands of players already leveling up their knowledge</p>
+                    <a href="game.html" class="cta-button">Play Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="level-up-notification" class="level-up-notification hidden">
+        <div class="notification-content">
+            <h2>Level Up!</h2>
+            <div class="level-reached">Level <span id="new-level">6</span></div>
+            <div class="level-title" id="level-title">Cosmic Voyager</div>
+            <div class="reward-unlocked">
+                <h3>New Reward Unlocked!</h3>
+                <div class="reward-icon">🔮</div>
+                <div class="reward-name">Mystery Box</div>
+            </div>
+            <button class="close-notification">Continue</button>
+        </div>
+    </div>
+
+    <div id="xp-reward-popup" class="xp-reward-popup hidden">
+        <div class="xp-popup-content">
+            <div class="xp-amount">+50 XP</div>
+            <div class="xp-message">Great answer!</div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="placeholder.svg?height=30&width=30" alt="Quiz Game Logo">
+                <span>Quiz Galaxy</span>
+            </div>
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-icon">📱</a>
+                <a href="#" class="social-icon">💬</a>
+                <a href="#" class="social-icon">📷</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 Quiz Galaxy. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
